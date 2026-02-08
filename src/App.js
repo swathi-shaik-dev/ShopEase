@@ -17,8 +17,7 @@ class App extends Component {
     cartList: [],
   }
 
-  //   TODO: Add your code for remove all cart items, increment cart item quantity, decrement cart item quantity, remove cart item
-
+ 
   addCartItem = product => {
     const {cartList} = this.state
     const productObject = cartList.find(
@@ -39,7 +38,7 @@ class App extends Component {
       const updatedCartList = [...cartList, product]
       this.setState({cartList: updatedCartList})
     }
-    //   TODO: Update the code here to implement addCartItem
+    
   }
 
   incrementCartItemQuantity = id => {
